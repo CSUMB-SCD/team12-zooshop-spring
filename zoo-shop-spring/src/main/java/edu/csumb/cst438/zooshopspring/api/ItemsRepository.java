@@ -1,4 +1,5 @@
-package spring;
+package edu.csumb.cst438.zooshopspring.data;
+
 
 import org.springframework.stereotype.Repsitory;
 import org.springframework.data.mongodb.repository.MongoRepository;

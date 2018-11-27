@@ -1,4 +1,5 @@
-package spring;
+package edu.csumb.cst438.zooshopspring.api;
+
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
