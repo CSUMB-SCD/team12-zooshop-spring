@@ -2,7 +2,7 @@ package spring;
 
 public class Items {
 
-    private String id;
+    private String itemid;
     private int itemNumber;
     private String name;
     private double price;
@@ -12,8 +12,8 @@ public class Items {
 
     public Items() {}
 
-    public Items(String id, int itemNumber, String name, double price, String description, int instock, String image) {
-        this.id = id;
+    public Items(String itemid, int itemNumber, String name, double price, String description, int instock, String image) {
+        this.itemid = itemid;
         this.itemNumber = itemNumber;
         this.name = name;
         this.price = price;
@@ -23,7 +23,7 @@ public class Items {
     }
     
     public void save(Items item) {
-        this.id = item.id;
+        this.itemid = item.itemid;
         this.itemNumber = item.itemNumber;
         this.name = item.name;
         this.price = item.price;
@@ -32,8 +32,8 @@ public class Items {
         this.image = item.image;
     }
 
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public String getId() { return itemid; }
+    public void setId(String itemid) { this.itemid = itemid; }
 
     public String getImage() { return image; }
     public void setImage(String image) { this.image = image; }
