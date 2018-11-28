@@ -3,7 +3,6 @@ package spring;
 public class Items {
 
     private String itemid;
-    private int itemNumber;
     private String name;
     private double price;
     private String description;
