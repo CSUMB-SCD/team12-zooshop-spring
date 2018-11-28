@@ -2,7 +2,8 @@ package spring;
 
 public class Items {
 
-    private String itemid;
+    private String id;
+    private int itemNumber;
     private String name;
     private double price;
     private String description;
@@ -11,8 +12,9 @@ public class Items {
 
     public Items() {}
 
-    public Items(String itemid, String name, double price, String description, int instock, String image) {
-        this.itemid = itemid;
+    public Items(String id, int itemNumber, String name, double price, String description, int instock, String image) {
+        this.id = id;
+        this.itemNumber = itemNumber;
         this.name = name;
         this.price = price;
         this.description = description;
@@ -21,7 +23,8 @@ public class Items {
     }
     
     public void save(Items item) {
-        this.itemid = item.itemid;
+        this.id = item.id;
+        this.itemNumber = item.itemNumber;
         this.name = item.name;
         this.price = item.price;
         this.description = item.description;
@@ -29,8 +32,8 @@ public class Items {
         this.image = item.image;
     }
 
-    public String getId() { return itemid; }
-    public void setId(String itemid) { this.itemid = itemid; }
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
 
     public String getImage() { return image; }
     public void setImage(String image) { this.image = image; }
@@ -40,6 +43,9 @@ public class Items {
 
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
+
+    public int getItemNumber() { return itemNumber; }
+    public void setItemNumber(int itemNumber) { this.itemNumber = itemNumber; }
 
     public int getInstock() { return instock; }
     public void setInstock(int instock) { this.instock = instock; }
