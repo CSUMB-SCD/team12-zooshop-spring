@@ -12,9 +12,8 @@ public class Items {
 
     public Items() {}
 
-    public Items(String itemid, int itemNumber, String name, double price, String description, int instock, String image) {
+    public Items(String itemid, String name, double price, String description, int instock, String image) {
         this.itemid = itemid;
-        this.itemNumber = itemNumber;
         this.name = name;
         this.price = price;
         this.description = description;
@@ -24,7 +23,6 @@ public class Items {
     
     public void save(Items item) {
         this.itemid = item.itemid;
-        this.itemNumber = item.itemNumber;
         this.name = item.name;
         this.price = item.price;
         this.description = item.description;
@@ -43,9 +41,6 @@ public class Items {
 
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
-
-    public int getItemNumber() { return itemNumber; }
-    public void setItemNumber(int itemNumber) { this.itemNumber = itemNumber; }
 
     public int getInstock() { return instock; }
     public void setInstock(int instock) { this.instock = instock; }

@@ -37,8 +37,8 @@ public class ItemsController {
     }
 
     @CrossOrigin(origins = "*")
-    @GetMapping(value = "/{itemNumber}")
-    public Items getItemNumber(@PathVariable("itemNumber") int itemNumber) {
-        return itemRepository.findByitemNumber(itemNumber);
+    @GetMapping(value = "/{itemid}")
+    public Items getItemNumber(@PathVariable("itemid") int itemid) {
+        return itemRepository.findByitemNumber(itemid);
     }
 }
