@@ -11,7 +11,6 @@ public class UsersController {
     @Autowired
     private UsersRepository userRepository;
 
-    @CrossOrigin(origins = "https://team12-zoo-shop.herokuapp.com/*")
     @GetMapping ("/users")
     public List<Users> getAll() {
         return userRepository.findAll();
