@@ -11,7 +11,7 @@ public class UsersController {
     @Autowired
     private UsersRepository userRepository;
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
     @GetMapping ("/users")
     public List<Users> getAll() {
         return userRepository.findAll();
