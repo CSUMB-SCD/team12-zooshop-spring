@@ -1,12 +1,12 @@
-package edu.csumb.cst438.zooshopspring.api;
+package app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ZooShopSpringApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZooShopSpringApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }

@@ -1,8 +1,8 @@
-package edu.csumb.cst438.zooshopspring.data;
+package app;
 
-
-import org.springframework.stereotype.Repsitory;
+import org.springframework.stereotype.Repository;
 import org.springframework.data.mongodb.repository.MongoRepository;
+
 @Repository
 interface ItemsRepository extends MongoRepository<Items, String> {
     Items findByname(String name);

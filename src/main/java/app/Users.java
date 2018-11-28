@@ -1,5 +1,4 @@
-package edu.csumb.cst438.zooshopspring.api.entities;
-
+package app;
 
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
