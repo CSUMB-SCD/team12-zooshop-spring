@@ -10,7 +10,7 @@ public class UsersController {
     private UsersRepository userRepository;
 
     @CrossOrigin(origins = "*")
-    @PutMapping(value = "/put/{username}/{credit}")
+    @PutMapping(value = "/credit/{username}/{credit}")
     public Users setCredits(
             @PathVariable("username") String username,
             @PathVariable("credit") Double credit) {
