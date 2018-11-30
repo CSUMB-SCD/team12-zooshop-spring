@@ -14,7 +14,7 @@ public class ItemsController {
     private ItemsRepository itemRepository;
    
     @CrossOrigin(origins = "*")
-    @PutMapping(value = "/put/{itemNumber}/{inStock}")
+    @GetMapping(value = "/put/{itemNumber}/{inStock}")
     public Items setItemNumber(
             @PathVariable("itemNumber") int itemNumber, 
             @PathVariable("inStock") int inStock) {
