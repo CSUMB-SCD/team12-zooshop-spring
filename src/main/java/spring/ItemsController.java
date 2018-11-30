@@ -13,7 +13,7 @@ public class ItemsController {
     @Autowired
     private ItemsRepository itemRepository;
    
-    @CrossOrigin(origins = "*")
+    //@CrossOrigin(origins = "*")
     @GetMapping(value = "/put/{itemNumber}/{inStock}")
     public Items setItemNumber(
             @PathVariable("itemNumber") int itemNumber, 
